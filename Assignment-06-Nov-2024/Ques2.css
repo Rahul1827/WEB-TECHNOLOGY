@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 15px;
+    color: white;
+}
+
+.profile {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.details, .contact, .sales-activity {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin: 5px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 8%;
+    background: #007BFF;
+    margin: 0 2%;
+    color: white;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.bar:hover {
+    background: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+#profile
+{
+    width: 200px;
+    height: 200px;
+}
+
+#graph
+{
+    width: 500px;
+    height: 300px;
+}
