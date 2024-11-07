@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Color Example</title>
+    <style>
+        .blue-border {
+            border: 5px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .hex-border {
+            border: 5px solid #ff5733;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .rgb-border {
+            border: 5px solid rgb(255, 99, 71);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .transparent-border {
+            border: 5px solid rgba(0, 128, 0, 0.5);
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blue-border">
+        This div has a blue border using a predefined color.
+    </div>
+
+    <div class="hex-border">
+        This div has a border with a hexadecimal color code (#ff5733).
+    </div>
+
+    <div class="rgb-border">
+        This div has a border with an RGB color (rgb(255, 99, 71)).
+    </div>
+
+    <div class="transparent-border">
+        This div has a border with an RGBA color (rgba(0, 128, 0, 0.5)) with transparency.
+    </div>
+</body>
+</html>

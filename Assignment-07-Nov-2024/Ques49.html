@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Min-Height, Max-Height Example</title>
+    <style>
+        .height-example {
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid blue;
+        }
+
+        .min-height-example {
+            min-height: 200px;
+            background-color: lightgreen;
+            border: 2px solid green;
+        }
+
+        .max-height-example {
+            max-height: 200px;
+            background-color: lightcoral;
+            border: 2px solid red;
+            overflow: auto; /* To show scrolling if content exceeds max-height */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="height-example">
+        This div has a fixed height of 200px.
+    </div>
+    <div class="min-height-example">
+        This div has a minimum height of 200px, but it will expand if the content requires more space.
+    </div>
+    <div class="max-height-example">
+        This div has a maximum height of 200px, and content will scroll if it exceeds the limit.
+        <p>This is a paragraph to demonstrate scrolling when content exceeds max-height.</p>
+        <p>Additional content to force scrolling...</p>
+        <p>More content...</p>
+        <p>Even more content...</p>
+    </div>
+
+</body>
+</html>

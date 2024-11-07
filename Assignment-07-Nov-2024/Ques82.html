@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Translate Example</title>
+    <style>
+        .shift-paragraph {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.5s ease;
+        }
+
+        .shift-paragraph:hover {
+            transform: translate(50px, 50px);
+        }
+
+        .shift-paragraph.translateX:hover {
+            transform: translateX(50px);
+        }
+
+        .shift-paragraph.translateY:hover {
+            transform: translateY(50px);
+        }
+    </style>
+</head>
+<body>
+
+    <p class="shift-paragraph">Hover me!</p>
+    <p class="shift-paragraph translateX">Hover me to shift X!</p>
+    <p class="shift-paragraph translateY">Hover me to shift Y!</p>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Skew Example</title>
+    <style>
+        .skew-paragraph {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.5s ease;
+        }
+
+        .skew-paragraph:hover {
+            transform: skew(20deg, 10deg);
+        }
+
+        .skew-paragraph.skewX:hover {
+            transform: skewX(20deg);
+        }
+
+        .skew-paragraph.skewY:hover {
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+<body>
+
+    <p class="skew-paragraph">Hover me!</p>
+    <p class="skew-paragraph skewX">Hover me to skew X!</p>
+    <p class="skew-paragraph skewY">Hover me to skew Y!</p>
+
+</body>
+</html>

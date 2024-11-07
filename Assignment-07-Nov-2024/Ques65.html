@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CSS ID Example</title>
+    <style>
+        /* Define styles for unique IDs */
+        #header {
+            color: green;
+            font-size: 30px;
+        }
+
+        #footer {
+            color: blue;
+            font-size: 18px;
+        }
+
+        /* Define styles for classes */
+        .highlight {
+            color: red;
+        }
+
+        .large-text {
+            font-size: 24px;
+        }
+
+        /* An ID with a class */
+        #uniqueElement {
+            color: purple;
+            font-size: 20px;
+        }
+        
+        /* Multiple classes applied to one element */
+        .highlight.large-text {
+            font-size: 24px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">This is a header with an ID</h1>
+
+    <!-- a) Same ID used multiple times  -->
+    <!-- This is an example of incorrect usage -->
+    <p id="highlight">This paragraph has an ID named "highlight".</p>
+    <p id="highlight">This paragraph also has an ID named "highlight" (invalid in actual practice).</p>
+
+    <p id="footer">This is a footer with an ID</p>
+
+    <h2 id="uniqueElement" class="highlight">This is a heading with an ID and a class</h2>
+
+    <p id="uniqueElement" class="highlight large-text">This paragraph uses multiple classes to combine styles: red color and larger font size.</p>
+
+    <p class="highlight large-text">This paragraph demonstrates the correct use of multiple classes (highlight and large-text) applied to the same tag.</p>
+
+</body>
+</html>

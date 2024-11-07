@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Alignment in Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+        }
+        .top-align {
+            vertical-align: top;
+        }
+        .middle-align {
+            vertical-align: middle;
+        }
+        .bottom-align {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="top-align">Top Aligned Content</td>
+            <td class="middle-align">Middle Aligned Content</td>
+            <td class="bottom-align">Bottom Aligned Content</td>
+        </tr>
+        <tr>
+            <td class="top-align">Another Top</td>
+            <td class="middle-align">Another Middle</td>
+            <td class="bottom-align">Another Bottom</td>
+        </tr>
+    </table>
+</body>
+</html>
